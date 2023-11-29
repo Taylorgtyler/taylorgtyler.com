@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
     };
 
     const titleOpacity = useTransform(scrollYProgress, [0, 0.15], [1, 0]);
-    const paragraphY = useTransform(scrollYProgress, [0.1, 0.3], [50, 0]);
+    const paragraphY = useTransform(scrollYProgress, [0.1, 0.2], [50, 0]);
     const paragraphOpacity = useTransform(scrollYProgress, [0.1, 0.3], [0, 1]);
 
     return (
