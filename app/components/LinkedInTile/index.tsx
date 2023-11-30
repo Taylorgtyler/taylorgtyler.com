@@ -1,6 +1,6 @@
-import React from 'react';
-import Image from 'next/image';
-import { ArrowUpRightIcon } from '@heroicons/react/20/solid';
+import React from "react";
+import Image from "next/image";
+import { ArrowUpRightIcon } from "@heroicons/react/20/solid";
 
 interface LinkedInLinkProps {
   profileUrl: string;
@@ -25,7 +25,3 @@ const LinkedInLink: React.FC<LinkedInLinkProps> = ({ profileUrl, name }) => {
 };
 
 export default LinkedInLink;
-
-
-  
-  

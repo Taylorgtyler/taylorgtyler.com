@@ -1,16 +1,15 @@
-"use client"
+"use client";
 
 import Work from "./work";
 
 const WorkSection = () => {
-    return (
-           <>
-           <div>
-                <Work />
-            </div>
-           </>
-
-    );
+  return (
+    <>
+      <div>
+        <Work />
+      </div>
+    </>
+  );
 };
 
 export default WorkSection;

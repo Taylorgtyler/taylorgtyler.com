@@ -3,10 +3,7 @@
 import Error from "./error";
 
 const ErrorPage = () => {
-    return (
-        <Error />
-    )
-}
+  return <Error />;
+};
 
 export default ErrorPage;
-  

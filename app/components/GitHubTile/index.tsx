@@ -1,6 +1,6 @@
-import React from 'react';
-import Image from 'next/image';
-import { ArrowUpRightIcon } from '@heroicons/react/20/solid';
+import React from "react";
+import Image from "next/image";
+import { ArrowUpRightIcon } from "@heroicons/react/20/solid";
 
 interface GitHubLinkProps {
   profileUrl: string;
@@ -16,7 +16,12 @@ const GitHubLink: React.FC<GitHubLinkProps> = ({ profileUrl, username }) => {
         rel="noopener noreferrer"
         className="flex items-center space-x-2 w-full text-white"
       >
-      <Image src="/github-mark-white.svg" alt="LinkedIn" width={24} height={24} />
+        <Image
+          src="/github-mark-white.svg"
+          alt="LinkedIn"
+          width={24}
+          height={24}
+        />
         <span className="font-medium">@{username}</span>
       </a>
       <ArrowUpRightIcon className="h-7 w-7 text-white group-hover:text-gray-300 transition-colors duration-200" />

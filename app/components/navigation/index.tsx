@@ -2,11 +2,11 @@
 import NavBar from "./navbar";
 
 const Navigation = () => {
-    return (
-        <>
-            <NavBar />
-        </>
-    );
+  return (
+    <>
+      <NavBar />
+    </>
+  );
 };
 
 export default Navigation;
