@@ -16,7 +16,7 @@ const LinkedInLink: React.FC<LinkedInLinkProps> = ({ profileUrl, name }) => {
         rel="noopener noreferrer"
         className="flex items-center space-x-2 w-full text-white"
       >
-        <Image src="/Linkedin_icon.svg" alt="LinkedIn" width={24} height={24} />
+        <Image src="/LinkedIn_icon.svg" alt="LinkedIn" width={24} height={24} />
         <span className="font-medium">{name}</span>
       </a>
       <ArrowUpRightIcon className="h-7 w-7 text-white group-hover:text-gray-300 transition-colors duration-200" />
