@@ -7,6 +7,8 @@ const Hero: React.FC = () => {
     const controlTitle = useAnimation();
     const controlFirstSection = useAnimation();
     const controlSecondSection = useAnimation();
+    const controlThirdSection = useAnimation();
+    const controlFourthSection = useAnimation();
     const controlFinalSection = useAnimation();
     const { scrollYProgress } = useScroll();
 
@@ -19,23 +21,27 @@ const Hero: React.FC = () => {
 
             const firstSectionStart = windowHeight * 0.8;
             const secondSectionStart = windowHeight * 1.6;
-            const finalSectionStart = windowHeight * 2.4;
+            const thirdSectionStart = windowHeight * 2.4;
+            const fourthSectionStart = windowHeight * 3.2;
+            const finalSectionStart = windowHeight * 4.0;
 
             if (scrollY >= firstSectionStart) controlFirstSection.start("visible");
             if (scrollY >= secondSectionStart) controlSecondSection.start("visible");
+            if (scrollY >= thirdSectionStart) controlThirdSection.start("visible");
+            if (scrollY >= fourthSectionStart) controlFourthSection.start("visible");
             if (scrollY >= finalSectionStart) controlFinalSection.start("visible");
         };
 
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
-    }, [controlTitle, controlFirstSection, controlSecondSection, controlFinalSection]);
+    }, [controlTitle, controlFirstSection, controlSecondSection, controlThirdSection, controlFourthSection, controlFinalSection]);
 
     const initialVariant = {
         hidden: { y: 50, opacity: 0 },
         visible: {
             y: 0,
             opacity: 1,
-            transition: { type: "spring", duration: .2 }
+            transition: { type: "spring", duration: .5 }
         },
     };
 
@@ -79,7 +85,7 @@ const Hero: React.FC = () => {
             <div className="min-h-screen flex items-center justify-center px-2 md:px-8">
                 <motion.div
                     initial="hidden"
-                    animate={controlSecondSection}
+                    animate={controlThirdSection}
                     variants={initialVariant}
                     className="text-center w-full"
                 >
@@ -89,7 +95,7 @@ const Hero: React.FC = () => {
             <div className="min-h-screen flex items-center justify-center px-2 md:px-8">
                 <motion.div
                     initial="hidden"
-                    animate={controlSecondSection}
+                    animate={controlFourthSection}
                     variants={initialVariant}
                     className="text-center w-full"
                 >
