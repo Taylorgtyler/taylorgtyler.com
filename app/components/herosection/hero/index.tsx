@@ -96,7 +96,7 @@ const Hero: React.FC = () => {
           variants={initialVariant}
           className="text-center w-full"
         >
-          <h1 className="text-4xl md:text-8xl font-bold">Product Engineer.</h1>
+          <h1 className="text-4xl md:text-8xl font-bold">Analytics Expert.</h1>
         </motion.div>
       </div>
       <div className="min-h-screen flex items-center justify-center px-2 md:px-8">
@@ -106,7 +106,7 @@ const Hero: React.FC = () => {
           variants={initialVariant}
           className="text-center w-full"
         >
-          <h1 className="text-4xl md:text-8xl font-bold">Data Engineer.</h1>
+          <h1 className="text-4xl md:text-8xl font-bold">Data Scientist.</h1>
         </motion.div>
       </div>
       <div className="min-h-screen flex items-center justify-center px-2 md:px-8">
